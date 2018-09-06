@@ -1,5 +1,7 @@
 package com.example.admin.retrofitdemo.model
 
+import java.util.ArrayList
+
 class BookList {
-    var items: List<BookInfo>? = null
+    var items: ArrayList<BookInfo>? = null
 }

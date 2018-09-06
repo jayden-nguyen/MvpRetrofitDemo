@@ -9,14 +9,14 @@ class RetrofitInstance {
         val BASE_URL = "https://www.googleapis.com"
 
         val retrofitInstance: Retrofit
-        get() {
-            if (retrofit == null){
-                retrofit = retrofit2.Retrofit.Builder()
-                        .baseUrl(BASE_URL)
-                        .addConverterFactory(GsonConverterFactory.create())
-                        .build()
+            get() {
+                if (retrofit == null) {
+                    retrofit = retrofit2.Retrofit.Builder()
+                            .baseUrl(BASE_URL)
+                            .addConverterFactory(GsonConverterFactory.create())
+                            .build()
+                }
+                return retrofit!!
             }
-            return retrofit!!
-        }
     }
 }
